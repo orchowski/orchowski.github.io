@@ -1,0 +1,34 @@
+body {
+    background-color: darkgrey;
+    opacity: 0;
+}
+
+h1.jumbo {
+    color: white;
+    text-align: center;
+    
+}
+
+.jumbotron{
+    padding-top: 100px;
+    transform: rotateZ(-1deg);
+    background-color: black;
+    opacity: 1;
+}
+
+p.title-inversed{
+    font-size: 30px; 
+    text-align: center;
+    color:black;
+}
+
+p.title{
+font-size: 30px; 
+    text-align: center;
+    color:white;
+}
+
+* {
+ font-size: 100%;
+ font-family: Josefin Sans;
+}

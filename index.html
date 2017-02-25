@@ -1,18 +1,75 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <title> Aleksander Orchowski </title>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Aleksander Orchowski</title>
+    <script>
+        $(document).ready(function () {
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });            
+            $("#main-container").fadeTo(1000, 1);     
+        });
+
+    </script>
 </head>
 
-<body>
+<body id="main-container" data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a href="#head">Home</a></li>
+            <li><a href="#about">Page 1</a></li>
+            <li><a href="#contact">Page 2</a></li>
 
-  <div class="jumbotron">
-    <h1>Hi!!</h1>
-    <p>i'm Aleksander Orchowski and i haven't finish this page yet.</p>
-  </div>
+                    <li><a href="#contact1">Page 3</a></li>
+
+                    <li><a href="#contact2">Page 4</a></li>
+</ul>
+    </nav>
+    <div class="container">
+        <div style="margin-top: 20px; background-color:white" id="head" class="jumbotron row">
+            <div class="col-md-5"> <center><img alt="Aleksander Orchowski" src="assets/the-orchoszfili.jpg" /></center> </div>
+            <div class="col-md-6">
+                <h1 class="jumbo" style="color:black">Hi!!</h1>
+                <p class="title-inversed"> I'm Aleksander Orchowski and i haven't finish this page yet.</p>
+            </div>
+        </div>
+        <div id="about" class="jumbotron">
+            <h1 class="jumbo">Hi!!</h1>
+            <p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
+        </div>
+        <div id="contact" class="jumbotron">
+            <h1 class="jumbo">Hi!!</h1>
+            <p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
+        </div>
+            <div id="contact" class="jumbotron">
+            <h1 class="jumbo">Hi!!</h1>
+            <p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
+        </div>
+            <div id="contact1" class="jumbotron">
+            <h1 class="jumbo">Hi!!</h1>
+            <p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
+        </div>
+            <div id="contact2" class="jumbotron">
+            <h1 class="jumbo">Hi!!</h1>
+            <p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
+        </div>
+    </div>
 </body>
 
 </html>
