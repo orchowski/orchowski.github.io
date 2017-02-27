@@ -4,84 +4,40 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<title>Aleksander Orchowski</title>
-	<script>
-		$(document).ready(function () {
-			$(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 900, function () {
-						window.location.hash = hash;
-					});
-				}
-			});
-			$("#main-container").fadeTo(1000, 1);
-		});
-	</script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body id="main-container" data-spy="scroll" data-target=".navbar">
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#head">Aleksander Orchowski</a> </div>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#welcome">Aleksander Orchowski</a> </div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#head">Home</a></li>
-				<li><a href="#about">Page 1</a></li>
-				<li><a href="#contact">Page 2</a></li>
-				<li><a href="#contact1">Page 3</a></li>
-				<li><a href="#contact2">Page 4</a></li>
+				<li><a href="#welcome">Welcome</a></li>
+				<li><a href="#about">About</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container">
-		<div style="margin-top: 20px; background-color:white" id="head" class="jumbotron row">
+		<div id="welcome" id="welcome" style="margin-top: 20px; background-color:white" class="jumbotron row">
 			<div class="col-md-5">
 				<center><img alt="Aleksander Orchowski" src="assets/the-orchoszfili.jpg" /></center>
 			</div>
 			<div class="col-md-6">
-				<h1 class="jumbo" style="color:black">Hi!!</h1>
-				<p class="title-inversed"> I'm Aleksander Orchowski and i haven't finish this page yet.</p>
+				<h1 class="jumbo" style="color:black">Hi everyone!!</h1>
+				<p class="title-inversed">My name is Aleksander Orchowski and i really enjoy that you found this page!</p>
+				<p class="paragraph-inversed"> Programming is my passion, but i'm trying not to confine myself to only one aspect. I seen life widely than other people and i pursue to my aims.
+					<br/>
+					<p class="title-inversed">My main aim? Be best at the things what i'm doing.</p>
+				</p>
 			</div>
 		</div>
 		<div id="about" class="jumbotron">
-			<h1 class="jumbo">Hi!!</h1>
-			<p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
-		</div>
-		<div id="contact" class="jumbotron">
-			<h1 class="jumbo">Hi!!</h1>
-			<p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
-		</div>
-		<div id="contact" class="jumbotron">
-			<h1 class="jumbo">Hi!!</h1>
-			<p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
-		</div>
-		<div id="contact1" class="jumbotron">
-			<h1 class="jumbo">Hi!!</h1>
-			<p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/> </p>
-		</div>
-		<div id="contact2" class="jumbotron">
 			<h1 class="jumbo">Hi!!</h1>
 			<p class="title"> Hi, i'm Aleksander Orchowski and i haven't finish this page yet.</p>
 		</div>

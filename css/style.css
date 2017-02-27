@@ -1,34 +1,49 @@
 body {
-    background-color: darkgrey;
-    opacity: 0;
+	background-color: darkgrey;
+	opacity: 0;
 }
 
 h1.jumbo {
-    color: white;
-    text-align: center;
-    
+	color: white;
+	text-align: center;
 }
 
-.jumbotron{
-    padding-top: 100px;
-    transform: rotateZ(-1deg);
-    background-color: black;
-    opacity: 1;
+.jumbotron {
+	padding-top: 100px;
+	transform: rotateZ(-1deg);
+	background-color: black;
+	opacity: 1;
 }
 
-p.title-inversed{
-    font-size: 30px; 
-    text-align: center;
-    color:black;
+.centered {
+	text-align: center;
 }
 
-p.title{
-font-size: 30px; 
-    text-align: center;
-    color:white;
+p.title-inversed {
+	text-align: center;
+	color: black;
+	font-size: 30px;
+}
+
+p.title {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+p.paragraph {
+	text-align: justify;
+	color: white;
+	font-size: 20px;
+}
+
+p.paragraph-inversed {
+	text-align: justify;
+	color: black;
+	font-size: 20px;
 }
 
 * {
- font-size: 100%;
- font-family: Josefin Sans;
+	font-size: 100%;
+	font-family: Josefin Sans;
 }
